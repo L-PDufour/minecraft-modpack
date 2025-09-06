@@ -1,0 +1,14 @@
+# Packwiz generated files that change frequently
+index.toml.tmp
+*.tmp
+
+# Don't track the actual mod files (they'll be downloaded)
+# But DO track the .pw.toml files that describe them
+
+# Optional: ignore backup files
+*.bak
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
