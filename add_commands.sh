@@ -1,63 +1,22 @@
 #!/usr/bin/env bash
-# Commands to add all mods from your Test Server NixOS modpack
-
-
+# Commands to add server-appropriate mods only
 # Core/API mods
 packwiz modrinth add fabric-api
 packwiz modrinth add fabric-language-kotlin
 packwiz modrinth add cloth-config
 
-# Performance mods
-packwiz modrinth add sodium
+# Performance mods (server-side)
 packwiz modrinth add lithium
-packwiz modrinth add iris
-packwiz modrinth add indium
 packwiz modrinth add ferritecore
 packwiz modrinth add modernfix
-packwiz modrinth add entityculling
-packwiz modrinth add moreculling
-packwiz modrinth add enhancedblockentities
-packwiz modrinth add immediatelyfast
 packwiz modrinth add memoryleakfix
-packwiz modrinth add dynamic-fps
 packwiz modrinth add fastquit
 
-# Visual/Client enhancement mods
-packwiz modrinth add sodium-extra
-packwiz modrinth add reeses-sodium-options
-packwiz modrinth add continuity
-packwiz modrinth add entity-model-features
-packwiz modrinth add entity-texture-features
-packwiz modrinth add animatica
-packwiz modrinth add fabricskyboxes
-packwiz modrinth add cit-resewn
-packwiz modrinth add optigui
-packwiz modrinth add puzzle
-packwiz modrinth add capes
-packwiz modrinth add lambdynamiclights
-
-# UI/QoL mods
-packwiz modrinth add modmenu
-packwiz modrinth add jade
-packwiz modrinth add jadeaddons
-packwiz modrinth add inventory-profiles-next
-packwiz modrinth add libipn
-packwiz modrinth add controlify
-packwiz modrinth add zoomify
-packwiz modrinth add borderless-mining
-packwiz modrinth add bettermounthud
-packwiz modrinth add main-menu-credits
-packwiz modrinth add yacl
-packwiz modrinth add yosbr
-
-# Utility/Tools
-packwiz modrinth add journeymap
-packwiz modrinth add fabrishot
+# Utility/Tools (server-compatible)
 packwiz modrinth add veinmining
-packwiz modrinth add advancement-info
-packwiz modrinth add language-reload
-packwiz modrinth add morechathistory
 packwiz modrinth add no-chat-reports
+packwiz modrinth add e4mc
+packwiz modrinth add rrls
 
 # Content/World gen mods
 packwiz modrinth add biomes-o-plenty
@@ -82,14 +41,8 @@ packwiz modrinth add farmers-delight
 packwiz modrinth add charm
 packwiz modrinth add geckolib
 
-# Technical/Debug mods
-packwiz modrinth add debugify
-packwiz modrinth add mixintrace
-packwiz modrinth add modelfix
+# Technical/Debug mods (server-relevant)
 packwiz modrinth add glitch-core
 packwiz modrinth add fsb-interop
-packwiz modrinth add e4mc
-packwiz modrinth add rrls
-packwiz modrinth add fadeless
 
-echo "All mods added! Run 'packwiz refresh' to update the index."
+echo "Server mods added! Run 'packwiz refresh' to update the index."
